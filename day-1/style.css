@@ -1,0 +1,50 @@
+body{
+    font-family: Arial;
+    margin: 50px;
+}
+
+/* Common Box Style */
+.box{
+    width: 200px;
+    height: 120px;
+
+    color: white;
+
+    text-align: center;
+
+    line-height: 120px;
+
+    font-size: 25px;
+
+    position: absolute;
+}
+
+/* Red Box */
+.red{
+    background-color: red;
+
+    top: 100px;
+    left: 100px;
+
+    z-index: 1;
+}
+
+/* Blue Box */
+.blue{
+    background-color: blue;
+
+    top: 150px;
+    left: 150px;
+
+    z-index: 2;
+}
+
+/* Green Box */
+.green{
+    background-color: green;
+
+    top: 200px;
+    left: 200px;
+
+    z-index: 3;
+}

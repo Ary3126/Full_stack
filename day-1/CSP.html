@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+          content="
+          default-src 'self';
+          script-src 'self' https://cdn.jsdelivr.net;
+          style-src 'self' https://fonts.googleapis.com;
+          font-src https://fonts.gstatic.com;
+          img-src 'self' https://images.unsplash.com;
+          ">
+
+    <title>Content Security Policy Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Content Security Policy Demo</h1>
+
+    <p>
+        This webpage uses a Content Security Policy (CSP)
+        to allow trusted resources only.
+    </p>
+
+    <!-- Allowed image -->
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+         alt="Nature Image">
+
+    <!-- Allowed external script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        console.log("CSP is working correctly!");
+    </script>
+
+</body>
+</html>

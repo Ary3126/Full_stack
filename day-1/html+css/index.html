@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopNest | Modern Ecommerce Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">SN</span>
+        <div>
+          <h1>ShopNest</h1>
+          <p>Modern shopping for lifestyle essentials</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Subscribe</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Search">🔍</button>
+        <button class="icon-button" aria-label="Wishlist">♡</button>
+        <button class="cart-button">Cart <span>3</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow">Ecommerce made elegant</span>
+          <h2>Shop the latest home, tech, and lifestyle collections.</h2>
+          <p>Discover premium goods, stylish outfits, and smart home accessories—all in one place with fast delivery.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="#collections" class="btn btn-secondary">Browse Collections</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span>New Arrivals</span>
+            <h3>Minimalist home decor</h3>
+            <p>Elevate every room with clean lines and premium textures.</p>
+          </div>
+          <div class="hero-image"></div>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article>
+          <strong>120+</strong>
+          <p>Premium products</p>
+        </article>
+        <article>
+          <strong>24/7</strong>
+          <p>Support & shipping</p>
+        </article>
+        <article>
+          <strong>Free</strong>
+          <p>Returns within 30 days</p>
+        </article>
+      </section>
+
+      <section class="featured-section" id="products">
+        <div class="section-header">
+          <p class="eyebrow">Featured products</p>
+          <h2>Top picks for your modern lifestyle</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="card-media media-tech"></div>
+            <div class="card-body">
+              <span>Electronics</span>
+              <h3>Smart speaker</h3>
+              <p>Voice-controlled audio system with rich bass and ambient lighting.</p>
+              <div class="card-meta">
+                <strong>$129</strong>
+                <button class="btn btn-sm">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-media media-fashion"></div>
+            <div class="card-body">
+              <span>Fashion</span>
+              <h3>Everyday hoodie</h3>
+              <p>Soft organic cotton hoodie designed for comfort and effortless style.</p>
+              <div class="card-meta">
+                <strong>$58</strong>
+                <button class="btn btn-sm">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-media media-home"></div>
+            <div class="card-body">
+              <span>Home</span>
+              <h3>Accent lamp</h3>
+              <p>Minimal LED lamp with dimming control and sculptural silhouette.</p>
+              <div class="card-meta">
+                <strong>$74</strong>
+                <button class="btn btn-sm">Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="section-header">
+          <p class="eyebrow">Curated collections</p>
+          <h2>Shop by category</h2>
+        </div>
+
+        <div class="collection-grid">
+          <article class="collection-card">
+            <h3>Work from home</h3>
+            <p>Desk accessories, tech essentials, and smart organizers for productivity.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Active lifestyle</h3>
+            <p>Comfortable activewear, fitness gear, and wellness essentials.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Gift ideas</h3>
+            <p>Thoughtful gifts for friends, family, and special celebrations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="section-header">
+          <p class="eyebrow">Why ShopNest?</p>
+          <h2>Experience ecommerce with smarter design</h2>
+        </div>
+
+        <div class="feature-list">
+          <article>
+            <h3>Responsive layout</h3>
+            <p>Works beautifully on mobile, tablet, and desktop screens using CSS grid and flex layout.</p>
+          </article>
+          <article>
+            <h3>Accessible navigation</h3>
+            <p>Semantic HTML, clear focus states, and visible links for all users.</p>
+          </article>
+          <article>
+            <h3>CSS interaction</h3>
+            <p>Hover effects, transitions, and state styling delivered with pure CSS.</p>
+          </article>
+          <article>
+            <h3>Product browsing</h3>
+            <p>Cards, category sections, and call-to-action buttons create a polished shop experience.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>Join our mailing list for sales and new drops.</h2>
+        </div>
+        <form class="newsletter-form" action="#" method="post">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <div class="footer-brand">
+        <h2>ShopNest</h2>
+        <p>Built with accessible HTML and modern CSS. No JavaScript required for the layout and core experience.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Company</h3>
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#collections">Collections</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
