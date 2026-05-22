@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <main>
+        <div class="msg-container hide">
+            <p class="message">Winner</p>
+            <button id="play-again">Play Again</button>
+        </div>
+        <div class="difficulty-select">
+            <button id="easy" class="difficulty-btn active">Easy</button>
+            <button id="hard" class="difficulty-btn">Hard</button>
+            <button id="impossible" class="difficulty-btn">Impossible</button>
+        </div>
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-container">
+            <div class="player-section">
+                <h2>You</h2>
+                <div class="choices">
+                    <button class="choice-btn" data-choice="rock">🪨 Rock</button>
+                    <button class="choice-btn" data-choice="paper">📄 Paper</button>
+                    <button class="choice-btn" data-choice="scissors">✂️ Scissors</button>
+                </div>
+                <p class="player-choice">Your choice: <span id="p1-choice">-</span></p>
+            </div>
+            <div class="vs-section">VS</div>
+            <div class="opponent-section">
+                <h2 id="opponent-title">Robot</h2>
+                <div class="choices">
+                    <button class="choice-btn" data-choice="rock" disabled>🪨 Rock</button>
+                    <button class="choice-btn" data-choice="paper" disabled>📄 Paper</button>
+                    <button class="choice-btn" data-choice="scissors" disabled>✂️ Scissors</button>
+                </div>
+                <p class="player-choice">Robot choice: <span id="p2-choice">-</span></p>
+            </div>
+        </div>
+        <div class="score-board">
+            <div class="score">You: <span id="p1-score">0</span></div>
+            <div class="score">Robot: <span id="p2-score">0</span></div>
+        </div>
+        <button id="reset">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
