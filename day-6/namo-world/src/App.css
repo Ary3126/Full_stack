@@ -1,0 +1,41 @@
+.hero-section {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(26, 115, 232, 0.92)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.product-list {
+  background-color: #f8f9ff;
+}
+
+.footer-section {
+  background-color: #111827;
+  color: #cbd5e1;
+}
+
+.footer-section a {
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
