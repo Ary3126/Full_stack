@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="card">
+            <h1>URL Shortener</h1>
+            <p>Paste any website address below to create a fast short link.</p>
+            <form action="/url" method="POST" class="url-form">
+                <label for="url">Enter your URL</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com" required>
+                <button type="submit">Generate Short URL</button>
+            </form>
+            <div class="card-footer">
+                <a class="button secondary" href="/url/list">View all saved URLs</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Ary3126/Full_stack/issues"
   },
-  "homepage": "https://github.com/Ary3126/Full_stack#readme"
+  "homepage": "https://github.com/Ary3126/Full_stack#readme",
+  "dependencies": {
+    "mongoose": "^9.6.3",
+    "nodemon": "^3.1.14"
+  }
 }

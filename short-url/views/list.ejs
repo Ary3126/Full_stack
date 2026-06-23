@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Shortened URLs</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="card card--wide">
+            <h1>All Shortened URLs</h1>
+            <p>Review every shortened link with its redirect target and click count.</p>
+
+            <% if (urls.length === 0) { %>
+                <p>No URLs have been shortened yet.</p>
+            <% } else { %>
+                <div class="url-table-wrap">
+                    <table class="url-table">
+                        <thead>
+                            <tr>
+                            <th>#</th>
+                            <th>Short URL</th>
+                            <th>Original URL</th>
+                            <th>Visit Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% urls.forEach((item, index) => { %>
+                            <tr>
+                                <td><%= index + 1 %></td>
+                                <td>
+                                    <a class="small-link" href="<%= baseUrl %>/<%= item.shortId %>" target="_blank" rel="noopener noreferrer">
+                                        <span class="link-text"><%= baseUrl %>/<%= item.shortId %></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="small-link" href="<%= item.redirectUrl %>" target="_blank" rel="noopener noreferrer">
+                                        <span class="link-text"><%= item.redirectUrl %></span>
+                                    </a>
+                                </td>
+                                <td><%= item.visithistory.length %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+                </div>
+            <% } %>
+
+            <div class="card-footer">
+                <a class="button secondary" href="/">Back to create new URL</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
